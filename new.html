@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advstyle.css" type="text/css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Travel_Spot Js -->
+    <script type="text/javascript" src="new.js"></script>
+    <title>New Spots</title>
+</head>
+
+<body>
+    
+
+    <!-- Spots Section -->
+    <section class="spots" id="spots">
+             <!-- Navigation Bar -->
+    <nav>
+        <!--Navigation Bar Toggle(only for mobile)-->
+        <div class="toggle">
+            <h1 class="moblabel">Travo</h1>
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+        <!--Navigation Bar Toggle(only for mobile) Ends-->
+        <label class="logo">Travo</label>
+        <ul>
+            <li><a href="index.html#main">Home</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center><h1 class="shead">New Spots</h1></center>
+
+        <div class="cards" id="cards">
+        </div>
+        <br>
+    </section>
+
+
+    <!-- Scripts -->
+    <!--Scripts For NavigationBar Scrolling Effect-->
+    <script type="text/javascript">
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+                $('nav li a').addClass('green');
+                $('.moblabel').addClass('green');
+                $('.logo').addClass('green');
+            }
+            else {
+                $('nav').removeClass('black');
+                $('nav li a').removeClass('green');
+                $('nav h1').removeClass('green');
+                $('.logo').removeClass('green');
+            }
+        })
+    </script>
+    <!--Scripts For Navigation Bar Toggle-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('nav ul').toggleClass('actives');
+            })
+        })
+    </script>
+
+</body>
+
+</html>

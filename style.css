@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;    
+    scroll-behavior: smooth;
+}
+
+body, html{
+    background-color: #FFFFFF;
+    font-family: 'Fredoka One', cursive;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    line-height: 60px;
+    background-color: transparent;
+    z-index: 1000;
+    transition: 0.5s;   
+     position: fixed;
+   top:0;
+   overflow: hidden;
+}
+
+.black{
+    background-color: #F0F0F0;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    margin: 10px;
+}
+
+
+nav ul{
+    float: right;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    padding: 1px 26px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none; 
+}
+
+.moblabel{
+   float: left;
+    font-size: 30px;
+    color: white;
+}
+
+.green{
+    color: #8BC34A;
+}
+
+
+/* Main */
+.main{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(9, 153, 4, 0.363), rgba(0, 0, 0, 0.589)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.big-circle-green{
+    height: 700px;
+    width: 700px;
+    float: right;
+    position: relative;
+    top: -185px;
+    right: -155px;;
+    border-radius: 50%;
+    background-color: #8BC34A;
+}
+
+.title-sec{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+  
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.head{
+    font-size: 55px;
+    color: white;
+}
+
+.des{
+    color: white;
+}
+
+.find-spot{
+    
+    border: none;
+    outline: none;
+
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.find-spot {
+    background: linear-gradient(to right,#578823, #8BC34A);
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 28px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 170px;
+  }
+  
+  .find-spot span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .find-spot span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .find-spot:hover span {
+    padding-right: 25px;
+  }
+  
+  .find-spot:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .find-spot:hover{
+    box-shadow: 1px 1px 10px black;
+  }
+
+
+.category-sec{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.head2{
+    font-size: 45px;
+    color: white;
+}
+
+.categories{
+    display: inline-block;
+}
+
+
+.cbtn{
+    width: 150px;
+    margin: 8px;
+    background-color: white;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    color: #8BC34A;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 28px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.cbtn:hover{
+    box-shadow: 2px 2px 12px black;
+}
+
+.cbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.cbtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.cbtn:hover span {
+    padding-right: 25px;
+}
+  
+.cbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* About Section */
+
+
+.thead{
+    padding: 26px 26px 15px 26px;
+    font-size: 40px;
+    color:#8BC34A;
+}
+
+.tabout{
+    padding: 0px 26px 26px 26px;
+    color: rgb(160, 160, 160);
+    width: 50%;
+}
+
+.customer-travo{
+    direction: rtl;
+}
+
+.thead2{
+    padding: 26px 26px 15px 26px;
+    font-size: 40px;
+    color:#8BC34A;
+}
+
+.tabout2{
+    padding: 0px 26px 26px 26px;
+    color: rgb(160, 160, 160);
+    width: 50%;
+}
+
+/* Featured Section */
+.featured{
+    background-color: #212121;
+}
+
+.fhead{
+    padding: 26px 26px 26px 26px;
+    color: white;
+    font-size: 35px;
+}
+
+.fvideo{
+    padding: 0px 26px 26px 26px;
+}
+
+/* footer */
+footer{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .container .sec{
+    margin-right: 30px;
+}
+
+footer .container .sec.aboutus{
+    width: 40%;
+}
+
+footer .container h2{
+    position: relative;
+    color:#8BC34A;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+footer .container h2::before{
+    content: '';
+    position: absolute;
+    border: -5px;
+    left: 0;
+    width: 50px;
+    background: #8BC34A;
+}
+
+footer p{
+    color: #999;
+
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.sci li a:hover{
+    background:#8BC34A;
+}
+
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li{
+    list-style: none;
+}
+
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: black;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info{
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #000;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    text-align: center;
+    padding: 8px 0;
+    color: #999;
+}
+
+/* Custom Scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8BC34A;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #669b2a;
+  }
+
+/* Media Quesries */
+
+@media (max-width: 965px)
+{
+    
+    .toggle{
+        display: block;
+    }
+    
+    .pinktoggle{
+        display: block;
+    }
+
+    .cbtn{
+        display: block;
+    }
+    
+    nav ul{
+        width: 100%;
+        display: none;
+    }
+    
+    nav ul li{
+        display: block;
+        text-align: center;
+        transition: 0.5s;
+        background: #FF4081;
+    }
+    
+    .pinkblockli{
+        display: block;
+        text-align: center;
+        background: white;
+    }
+    
+    label.logo{
+        display: none;
+    }
+    
+    .pinklabel{
+        display: none;
+    }
+    
+    nav a{
+        color: white;
+    }
+    
+    a.active{
+        color: white;
+    }
+    .pinkactive{
+        color: #FF4081;
+    }
+    
+    .actives{
+        display: block;
+    }
+
+    footer{
+        padding: 40px; 
+    }
+
+    footer .container{
+        flex-direction: column;
+    }
+    
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container .sec.aboutus, .quickLinks, .contact{
+        width: 100%;
+    }   
+}
+
+@media(max-width: 650px){
+    .thead{
+        text-align: center;
+    }
+
+    .thead2{
+        text-align: center;
+    }
+
+    .tabout{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .tabout2{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+    .fvideo{
+        text-align: center;
+    }
+}
+
+@media(max-width: 545px){
+    iframe{
+        width: 370px;
+        height: 230px;
+    }
+}
+
+@media(max-width: 431px){
+    iframe{
+        width: 80%;
+        height: 70%;
+    }
+}
